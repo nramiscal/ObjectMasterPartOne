@@ -6,7 +6,7 @@ public class Human {
     int health = 100;
 
     public Human(String name) {
-        this.name = name;
+        setName(name);
     }
 
     // getters
@@ -43,6 +43,10 @@ public class Human {
     }
     public void setHealth(int health){
         this.health = health;
+    }
+
+    public void setName(String name){
+        this.name = name;
     }
 
     public void attack(Human human){
